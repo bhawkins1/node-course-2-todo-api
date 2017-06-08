@@ -51,6 +51,11 @@ app.get('/about', (req, res) => {
 });
 // /bad - send back Json with an errorMessage 'unable to fulfill this request'
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page'
+  });
+});
 
 
 
